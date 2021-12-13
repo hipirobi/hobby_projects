@@ -1,0 +1,31 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 16
+VisualStudioVersion = 16.0.30621.155
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Black_hole", "Black_hole\Black_hole.csproj", "{5E3C77A8-C1E2-49AD-8DFF-D76D73498624}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BlackHoleTest", "BlackHoleTest\BlackHoleTest.csproj", "{47510C26-53CA-4749-A41E-32DBA6033CE1}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{5E3C77A8-C1E2-49AD-8DFF-D76D73498624}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{5E3C77A8-C1E2-49AD-8DFF-D76D73498624}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{5E3C77A8-C1E2-49AD-8DFF-D76D73498624}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{5E3C77A8-C1E2-49AD-8DFF-D76D73498624}.Release|Any CPU.Build.0 = Release|Any CPU
+		{47510C26-53CA-4749-A41E-32DBA6033CE1}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{47510C26-53CA-4749-A41E-32DBA6033CE1}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{47510C26-53CA-4749-A41E-32DBA6033CE1}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{47510C26-53CA-4749-A41E-32DBA6033CE1}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {8E4D531C-4CDC-4850-9240-20F1E1D378B4}
+	EndGlobalSection
+EndGlobal
