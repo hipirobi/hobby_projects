@@ -7,12 +7,10 @@ namespace Black_hole.Persistence
 
 	public class BlackHoleDataAccess
 	{
-		public BlackHoleTable table { get; set; } 
-		public BlackHoleDataAccess()
-		{
-		}
+		public BlackHoleTable Table { get; set; }
+        //Compiler creates an empty constructor so I've removed the manual empty constructor.
 
-		public async Task<BlackHoleTable> LoadAsync(string path)
+        public async Task<BlackHoleTable> LoadAsync(string path)
         {
             try
             {
@@ -44,7 +42,7 @@ namespace Black_hole.Persistence
             }
             catch
             {
-                throw new Exception("File megnyitas kivétel keletkezett.");
+                throw new Exception("Fájl megnyitás kivétel keletkezett.");
             }
         }
 
@@ -54,12 +52,12 @@ namespace Black_hole.Persistence
             {
                 using (StreamWriter writer = new StreamWriter(path)) // fájl megnyitása
                 {
-                    writer.Write(table.currentPlayer + " " + table.scores[0] + " " + table.scores[1] + " "+ table.Size+" \n");
+                    writer.Write(table.CurrentPlayer + " " + table.Scores[0] + " " + table.Scores[1] + " "+ table.Size+" \n");
                     for (Int32 i = 0; i < table.Size; i++)
                     {
                         for (Int32 j = 0; j < table.Size; j++)
                         {
-                            await writer.WriteAsync(table.table[i, j] + " "); // kiírjuk az értékeket
+                            await writer.WriteAsync(table.Table[i, j] + " "); // kiírjuk az értékeket
                         }
                         await writer.WriteAsync("\n");
                         
@@ -68,7 +66,7 @@ namespace Black_hole.Persistence
             }
             catch
             {
-                throw new Exception("File mentes kivétel keletkezett.");
+                throw new Exception("Fájl mentes kivétel keletkezett.");
             }
         }
 	}
